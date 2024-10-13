@@ -1,7 +1,7 @@
+@for (profile of profiles; track profile.USD) {
 <br>
-<app-home-page></app-home-page>
+<app-home-page
+    [profile]="profile"
+></app-home-page>
+}
 
-
-<pre>
-    {{profiles | json}}
-</pre>

@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HomePageComponent } from "./common-ui/home-page/home-page.component";
 import { CourseBitcoinService } from './data/services/course-bitcoin.service';
 import {JsonPipe} from "@angular/common";
+import { Profile } from './data/services/interfaces/profile.interface';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ import {JsonPipe} from "@angular/common";
 })
 export class AppComponent {
   profileService: CourseBitcoinService = inject(CourseBitcoinService);
-  profiles: any[] = [];
+  profiles: Profile[] = [];
 
   constructor() {
     this.profileService.getBitcoinCourse().subscribe((val: any) => {
