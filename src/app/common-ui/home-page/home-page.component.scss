@@ -1,0 +1,28 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 500;
+    color: #ffffffe1;
+}
+
+.container {
+    margin: auto;
+    margin-top: 5%;
+    display: flexbox;
+    background-color: #000000;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
